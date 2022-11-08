@@ -212,7 +212,7 @@ h2 {
   }
   .learn-more-button {
     font-size: 0.8rem;
-    margin-top: 1em;
+    margin-top: 0.2em;
   }
   .box-content p {
     font-size: 0.9rem;
@@ -352,9 +352,12 @@ h2 {
     margin-bottom: 1em;
   }
   .learn-more-button {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .box {
     transform: translateY(-120px);
+  }
+  .box-text {
+    transform: translateY(-15px);
   }
 }/*# sourceMappingURL=style.css.map */
