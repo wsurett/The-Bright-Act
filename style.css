@@ -340,13 +340,13 @@ h2 {
     font-size: 1rem;
   }
   .hero-content {
-    text-align: left;
+    text-align: center;
   }
   .hero-content h1 {
     padding-left: 0.5em;
     line-height: 5.2rem;
     font-size: 5.2rem;
-    text-align: left;
+    text-align: center;
   }
   .hero-content h2 {
     font-style: italic;
