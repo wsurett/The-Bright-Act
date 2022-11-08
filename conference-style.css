@@ -164,4 +164,22 @@ p {
 
 .heading {
   margin: 0em 1em;
+}
+
+@-webkit-keyframes moveArrow {
+  from {
+    transform: translateX(7px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateX(7px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }/*# sourceMappingURL=conference-style.css.map */
