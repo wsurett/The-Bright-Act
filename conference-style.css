@@ -43,7 +43,7 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  height: 90%;
+  height: 100%;
 }
 
 .go-back-to-home {
