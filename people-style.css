@@ -1,0 +1,148 @@
+:root {
+  --primary-color: rgb(51, 16, 16);
+  --secondary-color: #FFFBEA;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* img {
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  background: var(--primary-color);
+  padding-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 8rem;
+  padding: 0;
+  line-height: 8rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 0.4em;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  background: var(--primary-color);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+}
+
+.refresh-page {
+  height: 80%;
+}
+
+.go-back-to-home {
+  color: var(--secondary-color);
+  height: 80%;
+}
+
+.logo {
+  transition: 0.15s;
+  cursor: pointer;
+  height: 100%;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo:active {
+  transform: scale(1);
+}
+
+.home {
+  transition: 0.2s;
+  color: #FFFBEA;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding-top: 2em;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  width: 90%;
+}
+.container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.person {
+  height: 350px;
+  width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 3em;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}/*# sourceMappingURL=people-style.css.map */
