@@ -340,13 +340,13 @@ h2 {
     font-size: 1rem;
   }
   .hero-content {
-    text-align: center;
+    text-align: left;
   }
   .hero-content h1 {
     padding-left: 0.5em;
     line-height: 5.2rem;
     font-size: 5.2rem;
-    text-align: center;
+    text-align: left;
   }
   .hero-content h2 {
     font-style: italic;
@@ -360,7 +360,9 @@ h2 {
   }
   .learn-more-button {
     font-size: 1.1rem;
+    transform: translateX(-7.2em);
   }
+  
   .box {
     transform: translateY(-120px);
   }
