@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: var(--secondary-color);
 }
 * img {
   max-width: 100%;
@@ -73,6 +74,18 @@ button {
   text-decoration: none;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.arrow {
+  fill: var(--secondary-color);
+  height: 50px;
+}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -95,4 +108,14 @@ button {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-content {
+    height: 75%;
+    width: 90%;
+  }
+  .back {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=senate-style.css.map */
