@@ -1,0 +1,167 @@
+:root {
+  --primary-color: rgb(51, 16, 16);
+  --secondary-color: #FFFBEA;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* img {
+  max-width: 100%;
+}
+
+body {
+  padding-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  background: var(--primary-color);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+}
+
+.go-back-to-home {
+  color: var(--secondary-color);
+  height: 80%;
+}
+
+.logo {
+  transition: 0.15s;
+  cursor: pointer;
+  height: 100%;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo:active {
+  transform: scale(1);
+}
+
+.back {
+  transition: 0.2s;
+  color: #FFFBEA;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 1em;
+  padding-bottom: 80px;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.arrow-box {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.arrow {
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+  cursor: pointer;
+  rotate: 90deg;
+  fill: var(--secondary-color);
+  height: 2.5em;
+  animation: moveArrow 0.7s alternate-reverse infinite;
+}
+
+.to-pres {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-bottom: 2em;
+}
+
+.biden {
+  height: 100%;
+  width: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5em;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+.stuff p {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.biden-stuff {
+  margin: 0em 2em;
+  height: 250px;
+  padding: 0;
+  display: flex;
+  background: var(--secondary-color);
+  opacity: 0.8;
+}
+.biden-stuff img {
+  height: 100%;
+}
+
+.actions {
+  margin-left: 2em;
+  margin-top: 1em;
+  color: var(--primary-color);
+}
+
+.heading {
+  margin: 0em 1em;
+}/*# sourceMappingURL=conference-style.css.map */
