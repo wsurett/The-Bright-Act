@@ -215,4 +215,22 @@ main {
   .house {
     margin-bottom: 2em;
   }
+  .senate {
+    margin-bottom: 1.5em;
+  }
+  .container h2 {
+    line-height: 3rem;
+  }
+  .container h6 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home {
+    font-size: 1rem;
+  }
+  .navbar-content {
+    height: 75%;
+    width: 90%;
+  }
 }/*# sourceMappingURL=game-style.css.map */
