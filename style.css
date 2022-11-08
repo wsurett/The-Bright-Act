@@ -7,11 +7,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
-  img {
-    max-width: 100%;
-  }
+  font-family: "Poppins", sans-serif;
+}
+* img {
+  max-width: 100%;
 }
 
 body {
@@ -44,9 +43,7 @@ h2 {
   color: var(--secondary-color);
   height: 100vh;
   width: 100vw;
-  background-image: 
-    linear-gradient(to bottom, rgba(51, 16, 16, 0.6), rgba(51, 16, 16, 1)), 
-    url('capitol-building.jpg');
+  background-image: linear-gradient(to bottom, rgba(51, 16, 16, 0.6), rgb(51, 16, 16)), url("capitol-building.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -86,14 +83,12 @@ h2 {
   transition: 0.15s;
   cursor: pointer;
   height: 100%;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  &:active {
-    transform: scale(1);
-  }
+}
+.left-box:hover {
+  transform: scale(1.1);
+}
+.left-box:active {
+  transform: scale(1);
 }
 
 .play-game {
@@ -102,7 +97,7 @@ h2 {
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .hero-content {
@@ -124,15 +119,13 @@ h2 {
   font-weight: 700;
   padding: 0.3em 1.4em;
   border-radius: 50px;
-
-  &:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-  }
-
-  &:active {
-    transform: scale(0.8);
-  }
+}
+.learn-more-button:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+.learn-more-button:active {
+  transform: scale(0.8);
 }
 
 .break {
@@ -161,8 +154,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: calc(100% - 23em);
-  // min-height: 100%;
   background: var(--secondary-color);
   color: var(--primary-color);
   padding: 0em 5em;
@@ -171,15 +162,13 @@ h2 {
 .box-text {
   text-align: center;
   color: var(--primary-color);
-
-  h3 {
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  h2 {
-    font-weight: 500;
-  }
+}
+.box-text h3 {
+  font-weight: 400;
+  font-style: italic;
+}
+.box-text h2 {
+  font-weight: 500;
 }
 
 .image-content {
@@ -197,8 +186,6 @@ h2 {
   bottom: 25%;
 }
 
-// ANIMATIONS
-
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -206,7 +193,7 @@ h2 {
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -223,39 +210,28 @@ h2 {
   transform-origin: bottom left;
 }
 
-// MEDIA QUERIES
-
 @media screen and (max-width: 1080px) {
   h1 {
     font-size: 6rem;
   }
-
   h2 {
     font-size: 1.5rem;
   }
-
   .learn-more-button {
     font-size: 0.8rem;
     margin-top: 0.2em;
   }
-
-  .box-content {
-    p {
-      font-size: 0.9rem;
-    }
+  .box-content p {
+    font-size: 0.9rem;
   }
-
   .box-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: calc(100% - 15em);
-    // min-height: 100%;
     background: var(--secondary-color);
     color: var(--primary-color);
     padding: 0em 5em;
   }
-
   .image-content {
     min-width: 19em;
     height: 100%;
@@ -264,7 +240,6 @@ h2 {
     align-items: center;
     background: var(--secondary-color);
   }
-  
   .gary {
     position: relative;
     right: 1.5em;
@@ -274,37 +249,30 @@ h2 {
     transform: tranlsateY(10em);
   }
 }
-
 @media screen and (max-width: 865px) {
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  
-    img {
-      max-width: 100%;
-    }
+    font-family: "Poppins", sans-serif;
   }
-  
+  * img {
+    max-width: 100%;
+  }
   body {
     height: 100vh;
   }
-  
   html {
     scroll-behavior: smooth;
   }
-  
   button {
     cursor: pointer;
   }
-  
   h2 {
     font-weight: 500;
     font-size: 2rem;
     margin-bottom: 0.4em;
   }
-  
   .main {
     display: flex;
     flex-direction: column;
@@ -315,7 +283,6 @@ h2 {
     background: var(--primary-color);
     color: var(--secondary-color);
   }
-  
   .box {
     transform: translateY(-3em);
     background: transparent;
@@ -324,7 +291,6 @@ h2 {
     width: 80vw;
     height: 65%;
   }
-  
   .box-content {
     position: static;
     order: 2;
@@ -336,7 +302,6 @@ h2 {
     padding: 2em 3em;
     margin-bottom: 4em;
   }
-  
   .box-text {
     display: flex;
     flex-direction: column;
@@ -346,29 +311,24 @@ h2 {
     height: 80%;
     width: 80vh;
     padding-bottom: 4em;
-  
-    h3 {
-      font-weight: 400;
-      font-style: italic;
-    }
-  
-    h2 {
-      font-weight: 500;
-    }
   }
-  
+  .box-text h3 {
+    font-weight: 400;
+    font-style: italic;
+  }
+  .box-text h2 {
+    font-weight: 500;
+  }
   .image-content {
     position: static;
     background: transparent;
   }
-  
   .gary {
     transform: translateX(8%);
     height: 20em;
     margin-bottom: 2em;
   }
 }
-
 @media screen and (max-width: 600px) {
   .main {
     height: calc(100vh + 300px);
@@ -376,42 +336,35 @@ h2 {
   .refresh-page {
     height: 60%;
   }
-
   .play-game {
     font-size: 1rem;
   }
-
   .hero-content {
     text-align: left;
-
-    h1 {
-      padding-left: 0.5em;
-      line-height: 5.2rem;
-      font-size: 5.2rem;
-      text-align: left;
-    }
-  
-    h2 {
-      font-style: italic;
-      width: 100%;
-      padding-left: 2.4em;
-      padding-right: 10em;
-      margin-top: 0.5em;
-      font-size: 1.2rem;
-      text-align: left;
-      margin-bottom: 1em;
-    }
   }
-
+  .hero-content h1 {
+    padding-left: 0.5em;
+    line-height: 5.2rem;
+    font-size: 5.2rem;
+    text-align: left;
+  }
+  .hero-content h2 {
+    font-style: italic;
+    width: 100%;
+    padding-left: 2.4em;
+    padding-right: 10em;
+    margin-top: 0.5em;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 1em;
+  }
   .learn-more-button {
     font-size: 1.1rem;
   }
-
   .box {
     transform: translateY(-120px);
   }
-
   .box-text {
     transform: translateY(-15px);
   }
-}
+}/*# sourceMappingURL=style.css.map */
